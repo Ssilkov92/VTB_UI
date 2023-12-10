@@ -91,7 +91,7 @@ public class CardProfile extends Constants {
         driver.findElement(buttonVoyti).click();
         driver.findElement(smsCodeField).sendKeys("000000");
         Thread.sleep(3000);
-        driver.get("https://ift-ibrb1-sharing.vtb.ru/details/CreditCard/A0EFB6E5698841E6966C63BF64CB672B");
+        driver.get("https://ift-ibrb1-sharing.vtb.ru/details/CreditCard/39C0F15933BC480C8699577B2DC069C9");
         Thread.sleep(3000);
     }
     public void Authorization2() throws InterruptedException {
@@ -103,7 +103,7 @@ public class CardProfile extends Constants {
         Thread.sleep(1000);
         driver.findElement(buttonVoyti).click();
         Thread.sleep(3000);
-        driver.get("https://ift-ibrb1-sharing.vtb.ru/details/CreditCard/A0EFB6E5698841E6966C63BF64CB672B");
+        driver.get("https://ift-ibrb1-sharing.vtb.ru/details/CreditCard/39C0F15933BC480C8699577B2DC069C9");
         Thread.sleep(2000);
     }
 

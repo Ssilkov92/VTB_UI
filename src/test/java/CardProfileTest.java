@@ -18,16 +18,16 @@ import java.util.concurrent.TimeUnit;
 @DisplayName("Карта Profile")
 public class CardProfileTest extends BaseTest {
 
-    private static WebDriver driver;
+    static WebDriver driver = new ChromeDriver();
 
     @BeforeAll
     public static void beforeAll() {
         System.setProperty("webdriver.chromedriver", "C:\\soft\\Chromedriver\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
         driver.get("https://ift-ibrb1-sharing.vtb.ru/login");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
+
 
     @Test
     @Order(1)
